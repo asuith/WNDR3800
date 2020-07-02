@@ -127,8 +127,8 @@ jobs:
       run: |
         cd openwrt/bin
         mkdir wndr3800
-        mv targets/*/*/penwrt-ar71xx-generic-wndr3800* wndr3800
-        mv targets/*/*/sha256sums wndr3800
+        mv targets/ar71xx/generic/openwrt-ar71xx-generic-wndr3800* wndr3800
+        mv targets/ar71xx/generic/sha256sums wndr3800
         cd wndr3800
         # rm -rf packages
         echo "::set-env name=FIRMWARE::$PWD"
