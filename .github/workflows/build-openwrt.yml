@@ -17,8 +17,8 @@ on:
       - master
     paths:
       - '.config'
-#  schedule:
-#    - cron: 0 8 * * 5
+  schedule:
+      - cron: 0 8 28 * *
 #  watch:
 #    types: started
 
@@ -32,7 +32,7 @@ env:
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: false
+  UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: false
   TZ: Asia/Shanghai
 
