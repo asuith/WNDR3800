@@ -30,7 +30,7 @@ env:
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: false
@@ -125,7 +125,7 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
-        cd openwrt/bin
+        cd openwrt/bin/*/*
         # mkdir wndr3800
         # mv targets/ar71xx/generic/openwrt-ar71xx-generic-wndr3800* wndr3800
         # mv targets/ar71xx/generic/sha256sums wndr3800
