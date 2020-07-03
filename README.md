@@ -2,6 +2,10 @@
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/asuith/WNDR3800?style=for-the-badge&label=Download)](https://github.com/asuith/WNDR3800/releases/latest)
 
+## 注意事项
+
+注意`make menuconfig`时的选择不要选太多，不然编译出来之后没有*bin*和*img*文件。
+
 ## Acknowledgments
 
 - [Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
