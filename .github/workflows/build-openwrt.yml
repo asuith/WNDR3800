@@ -126,7 +126,7 @@ jobs:
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         mkdir wndr3800
-        cp .config wndr3800
+        # cp .config wndr3800/
         # cd openwrt/bin/
         mv openwrt/bin/targets/ar71xx/generic/openwrt-ar71xx-generic-wndr3800* wndr3800
         mv openwrt/bin/targets/ar71xx/generic/sha256sums wndr3800
